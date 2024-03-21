@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <title>Examinationsuppgift 3</title>
+  </head>
+  <body class="bg-white">
+    <div class="container p-xs-0 p-md-2 p-xl-4 bg-white">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-white navbar-white pb-3">
+          <div class="container">
+            <a href="index.html"
+              ><img
+                src="images/hugologoshop.webp"
+                alt="En Logotyp som skriver ut Hugo Shop"
+                height="70"
+            /></a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse nav-underline text-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-dark link-primary">OM OSS</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-dark link-danger"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    SAMPLE PAKET
+                  </a>
+                  <ul class="dropdown-menu rounded-2 text-md-center text-end">
+                    <li>
+                      <a class="dropdown-item" href="samples.html">Nya Paket</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="favorit.html"
+                        >Bästsäljare</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a href="pricing.html" class="nav-link text-dark link-success"
+                    >PRISER</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-dark link-warning"
+                    >KONTAKT</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="p-xs-0 p-md-3 p-xl-5 text-dark">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-md pb-5 text-center">
+                <img
+                  src="images/sample6_large.jpg"
+                  class="egen-bredd float-lg-start rounded-4"
+                  height="550"
+                  alt="En bild på en astronute som spelar trummor"
+                />
+              </div>
+
+              <div class="col-md p-5 text-center text-lg-start">
+                <h2>Space Riddim</h2>
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique deleniti possimus magnam corporis ratione facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                  suscipit quae similique laboriosam iste minus placeat odit
+                  velit quos, nulla architecto amet voluptates?
+                </p>
+
+                <!--#########################-->
+
+                <button
+                  type="button"
+                  class="btn btn-dark mt-3 p-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Ladda ner Paket
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Du är har inte rätt plan för att kunna ladda ner
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        Gå till sidan <a href="pricing.html">PRISER</a> för att
+                        kolla vad för medlemskap vi erbjuder
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--#########################-->
+                <button
+                  class="btn btn-danger p-2 mt-3"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                >
+                  Visa paketets Innehåll
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-start p-5 rounded-5"
+                  data-bs-scroll="true"
+                  tabindex="-1"
+                  id="offcanvasWithBothOptions"
+                  aria-labelledby="offcanvasWithBothOptionsLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5
+                      class="offcanvas-title"
+                      id="offcanvasWithBothOptionsLabel"
+                    >
+                      Ambience
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Space 1</p>
+
+                    <p>Space 2</p>
+
+                    <p>Space 3</p>
+
+                    <h5 class="offcanvas-title pt-5 pb-3">Snares</h5>
+
+                    <p>Snare1</p>
+
+                    <p>Snare2</p>
+
+                    <p>Snare3</p>
+
+                    <h5 class="offcanvas-title pt-5 pb-3">Kicks</h5>
+
+                    <p>Kick1</p>
+
+                    <p>Kick2</p>
+
+                    <p>Kick3</p>
+
+                    <h5 class="offcanvas-title pt-5 pb-3">FX</h5>
+
+                    <p>RobotFX</p>
+
+                    <p>AlienFX</p>
+
+                    <p>ChristianFX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--#########################-->
+
+        <section
+          class="text-light p-5 mb-5 rad rounded-5"
+          style="
+            background: linear-gradient(
+              to right,
+              rgb(216, 149, 55),
+              rgb(172, 55, 178)
+            );
+          "
+        >
+          <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+              <h2 class="mb-3 mb-md-0">Få 25% i rabatt</h2>
+            </div>
+
+            <div
+              class="progress mt-2"
+              role="progressbar"
+              aria-label="Animated striped example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="row mb-2 pt-5">
+          <div class="col-md-6">
+            <div
+              class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative rounded-5 border-color-thin"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"
+                  >Review</strong
+                >
+                <h3 class="mb-0">Jens Karlsson</h3>
+                <div class="mb-1 text-body-secondary">Nov 12</div>
+                <p class="card-text mb-auto">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+                <a
+                  href="#"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Fortsätt läsa
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  alt=" En glad kille"
+                  src="images/selfie4.png"
+                  class="h-100"
+                  width="200"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative rounded-5 border-color-thin"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis"
+                  >Review</strong
+                >
+                <h3 class="mb-0">Andreas Berg</h3>
+                <div class="mb-1 text-body-secondary">Nov 11</div>
+                <p class="mb-auto">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+                <a
+                  href="#"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Fortsätt läsa
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  alt="En glad kille med keps"
+                  src="images/selfie1.png"
+                  class="h-100"
+                  width="200"
+                />
+              </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center pt-3">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!--#########################-->
+      </main>
+
+      <!--Denna sedan ska jag byta nman på till "ett specifikt sample paket", sedan använda dropgun som mall-->
+
+      <footer class="py-3 mt-5 pt-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-primary">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-danger">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-warning">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-danger">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-primary">Om Oss</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2024 HUGO NIIRANEN</p>
+      </footer>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

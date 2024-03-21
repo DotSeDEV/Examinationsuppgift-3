@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <title>Examinationsuppgift 3</title>
+  </head>
+  <body class="bg-white">
+    <div class="container p-xs-0 p-md-2 p-xl-4 bg-white">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-white navbar-white pb-3">
+          <div class="container">
+            <a href="index.html"
+              ><img
+                src="images/hugologoshop.webp"
+                alt="En Logotyp som skriver ut Hugo Shop"
+                height="70"
+            /></a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse nav-underline text-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-dark link-primary">OM OSS</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-dark link-danger"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    SAMPLE PAKET
+                  </a>
+                  <ul class="dropdown-menu rounded-2 text-md-center text-end">
+                    <li>
+                      <a class="dropdown-item" href="samples.html">Nya Paket</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="favorit.html"
+                        >Bästsäljare</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a href="pricing.html" class="nav-link text-dark link-success"
+                    >PRISER</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-dark link-warning"
+                    >KONTAKT</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Vi uppdaterar!!</strong> Just nu förbättrar vi våran backend för
+        en ännu säkrare betalning.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <main class="pt-2">
+        <div
+          class="pricing-header p-3 pb-md-4 mx-auto text-center rounded-5"
+          style="
+            background: linear-gradient(
+              to right,
+              rgb(216, 149, 55),
+              rgb(172, 55, 178)
+            );
+          "
+        >
+          <h1 class="display-4 fw-normal text-light pt-5">Priser</h1>
+          <p class="fs-5 text-light p-5">
+            På Hugo Shop förstår vi att varje musikskapare har unika behov och
+            budgetar. Därför erbjuder vi flexibla betalningsplaner som passar
+            alla, från nybörjare till etablerade proffs. Oavsett om du är en
+            hobbyist som utforskar ljudlandskapens mysterier eller en
+            professionell producent som strävar efter att ta din musik till nya
+            höjder, har vi en plan som passar dig.
+          </p>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-md-3 mb-3 text-center pt-5 pb-5 mt-5 mb-5"
+        >
+          <div class="col">
+            <div class="card mb-4 rounded-5">
+              <div class="card-header py-3 rounded-top-5">
+                <h4 class="my-0 fw-normal">Gratis</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  0 kr<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1 användare</li>
+                  <li>2 utvalda sample paket</li>
+                  <li class="text-decoration-line-through">
+                    Telefon & Mail support
+                  </li>
+                  <li class="text-decoration-line-through">2 Releases/mo</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-primary rounded-5 text-light"
+                  style="background-color: rgb(216, 149, 55)"
+                >
+                  Registrera dig
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-5">
+              <div class="card-header py-3 rounded-top-5">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  150 kr<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>3 användare</li>
+                  <li>5 sample paket/mo</li>
+                  <li>Telefon & Mail support</li>
+                  <li>2 Releases/mo</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-primary rounded-5"
+                  style="
+                    background: linear-gradient(
+                      to right,
+                      rgb(216, 149, 55),
+                      rgb(172, 55, 178)
+                    );
+                  "
+                >
+                  Välj Plan
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-5 border-primary">
+              <div
+                class="card-header py-3 text-bg-primary border-primary rounded-top-5"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    rgb(216, 149, 55),
+                    rgb(172, 55, 178)
+                  );
+                "
+              >
+                <h4 class="my-0 fw-normal">Företag</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  999 kr<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>25 användare</li>
+                  <li>Tillgång till alla paket</li>
+                  <li>Telefon & Mail support</li>
+                  <li>Obegränsade Releases</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-primary rounded-5"
+                  style="background-color: rgb(172, 55, 178)"
+                >
+                  Kontakta oss
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">Jämför våra planer</h2>
+
+        <div class="table-responsive pb-5">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%"></th>
+                <th style="width: 22%">Gratis</th>
+                <th style="width: 22%">Pro</th>
+                <th style="width: 22%">Företag</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Gratis paket</th>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Support</th>
+                <td></td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Uppladdningar</th>
+                <td>
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Projekt</th>
+                <td></td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Online lagring</th>
+                <td></td>
+                <td>
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Extra Säkerhet</th>
+                <td></td>
+                <td></td>
+                <td>
+                  <img
+                    alt="Ett svart check-bock"
+                    class="bi"
+                    width="18"
+                    height="18"
+                    src="images/check.webp"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="display-6 text-center mb-5 pt-5">Vi står för säkerhet</h2>
+
+        <div class="row">
+          <div class="col-6 col-md-4 mx-auto pb-5 pt-2 text-center">
+            <img
+              src="images/security2.png"
+              alt="En bild på ett vitt hänglås "
+              height="220"
+            />
+          </div>
+          <div class="col-md-8 text-center text-md-start">
+            <p>
+              A paragraph of placeholder text. We're using it here to show the
+              use of the clearfix class. We're adding quite a few meaningless
+              phrases here to demonstrate how the columns interact here with the
+              floated image.
+            </p>
+
+            <p>
+              As you can see the paragraphs gracefully wrap around the floated
+              image. Now imagine how this would look with some actual content in
+              here, rather than just this boring placeholder text that goes on
+              and on, but actually conveys no tangible information at.
+            </p>
+
+            <p>
+              As you can see the paragraphs gracefully wrap around the floated
+              image. Now imagine how this would look with some actual content in
+              here, rather than just this boring placeholder text that goes on
+              and on, but actually conveys no tangible information at.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="py-3 mt-5 pt-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-primary">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-danger">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-warning">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-danger">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-dark link-primary">Om Oss</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2024 HUGO NIIRANEN</p>
+      </footer>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
