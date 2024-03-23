@@ -11,6 +11,14 @@
   );
 }
 
+.bg-org-to-pur{
+  background: linear-gradient(
+              to right,
+              rgb(216, 149, 55),
+              rgb(172, 55, 178)
+            );
+}
+
 .border-color {
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to left, rgb(216, 149, 55), rgb(172, 55, 178)) border-box;

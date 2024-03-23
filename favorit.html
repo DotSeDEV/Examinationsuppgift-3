@@ -12,10 +12,21 @@
     <title>Examinationsuppgift 3</title>
   </head>
   <body class="bg-white">
+
+
+    <!--Wrapper som centerar och hålla innhållet i en helhetlig responsiv miljö-->
     <div class="container p-xs-0 p-md-2 p-xl-4 bg-white">
+
+
+      <!--Header som innehåller en navigation för att ta sig runt mellan mina sidor-->
       <header>
+
+        <!--Responsiv nav som hamnar i en hamburger meny i mobilt läge-->
         <nav class="navbar navbar-expand-lg bg-white navbar-white pb-3">
+
           <div class="container">
+
+            <!--Klickbar logotop-->
             <a href="index.html"
               ><img
                 src="images/hugologoshop.webp"
@@ -23,6 +34,7 @@
                 height="70"
             /></a>
 
+            <!-- Knapp till hamburger menyn-->
             <button
               class="navbar-toggler"
               type="button"
@@ -39,11 +51,16 @@
               class="collapse navbar-collapse nav-underline text-end"
               id="navbarNav"
             >
+
+              <!--Här börjar navbaren-->
               <ul class="navbar-nav ms-auto">
+
+                <!--List-item med klickbar länk-->
                 <li class="nav-item">
                   <a href="#" class="nav-link text-dark link-primary">OM OSS</a>
                 </li>
 
+                <!--List-item med en dropdown meny-->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle text-dark link-danger"
@@ -66,12 +83,14 @@
                   </ul>
                 </li>
 
+                <!--List-item med klickbar länk-->
                 <li class="nav-item">
                   <a href="pricing.html" class="nav-link text-dark link-success"
                     >PRISER</a
                   >
                 </li>
 
+                <!--List-item med klickbar länk-->
                 <li class="nav-item">
                   <a href="#" class="nav-link text-dark link-warning"
                     >KONTAKT</a
@@ -82,10 +101,22 @@
           </div>
         </nav>
       </header>
+
+
+      <!--Här börjar det centrala innhållet på sidan-->
       <main>
+
+
+        <!--En sektion som innehåller information om ett sample-paket-->
         <section class="p-xs-0 p-md-3 p-xl-5 text-dark">
+
+          <!--En container som omsluter och centerar innehåller-->
           <div class="container">
+
+            <!--En DIV som sätter regler och hjälper strukturera innehållet-->
             <div class="row align-items-center justify-content-between">
+
+              <!--En DIV med en bild  -->
               <div class="col-md pb-5 text-center">
                 <img
                   src="images/sample6_large.jpg"
@@ -95,7 +126,9 @@
                 />
               </div>
 
+              <!--En DIV med text och knappar som kallar på olika komponenter-->
               <div class="col-md p-5 text-center text-lg-start">
+
                 <h2>Space Riddim</h2>
                 <p class="lead">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -108,8 +141,7 @@
                   Vivamus euismod hendrerit finibus. Proin vulputate ex tortor!
                 </p>
 
-                <!--#########################-->
-
+                <!--En knapp som kör en upp poppande "Modal component" -->
                 <button
                   type="button"
                   class="btn btn-dark mt-3 p-2"
@@ -119,7 +151,7 @@
                   Ladda ner Paket
                 </button>
 
-                <!-- Modal -->
+                <!--Innehållet till Modal komponenten-->
                 <div
                   class="modal fade"
                   id="exampleModal"
@@ -157,7 +189,7 @@
                   </div>
                 </div>
 
-                <!--#########################-->
+                <!--En knapp som kör fram en "offcanvas" komponent-->
                 <button
                   class="btn btn-danger p-2 mt-3"
                   type="button"
@@ -168,6 +200,7 @@
                   Visa paketets Innehåll
                 </button>
 
+                <!--Innhållet till offcanvas-->
                 <div
                   class="offcanvas offcanvas-start p-5 rounded-5"
                   data-bs-scroll="true"
@@ -226,23 +259,21 @@
           </div>
         </section>
 
-        <!--#########################-->
 
+        <!--En sektion som inehåller text och en "progressbar", och som har en bakgrund-->
         <section
-          class="text-light p-5 mb-5 rad rounded-5"
-          style="
-            background: linear-gradient(
-              to right,
-              rgb(216, 149, 55),
-              rgb(172, 55, 178)
-            );
-          "
-        >
+          class="text-light p-5 mb-5 rad rounded-5 bg-org-to-pur">
+
+
+          <!--En DIV som omsluter innehållet-->
           <div class="container">
+
+            <!--EN DIV med text-->
             <div class="d-md-flex justify-content-between align-items-center">
               <h2 class="mb-3 mb-md-0">Få 25% i rabatt</h2>
             </div>
 
+            <!--En DIV som innehåller en progressbar komponent-->
             <div
               class="progress mt-2"
               role="progressbar"
@@ -259,11 +290,19 @@
           </div>
         </section>
 
+
+        <!--En DIV som innehåller "reviews" och "sidobläddrande" navigaion-->
         <div class="row mb-2 pt-5">
+
+          <!--Första Review'en som tar upp 50% av bredden i desktop upplösning-->
           <div class="col-md-6">
+
+            <!--En DIV som omsluter innhållet och ger grundegenskaper till designen -->
             <div
               class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative rounded-5 border-color-thin"
             >
+
+              <!--DIV som tar hand om text elementen-->
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-primary-emphasis"
                   >Review</strong
@@ -271,8 +310,7 @@
                 <h3 class="mb-0">Jens Karlsson</h3>
                 <div class="mb-1 text-body-secondary">Nov 12</div>
                 <p class="card-text mb-auto">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content.
+                  Ntegor vulputate tempor libero a faucibus. Sed nec maximus elit, vitae ultrices nulla.
                 </p>
                 <a
                   href="#"
@@ -281,6 +319,8 @@
                   Fortsätt läsa
                 </a>
               </div>
+
+              <!--DIV som innhåller selfie-bilden, som även försvinner när upplösningen lämnar desktop-upplösning-->
               <div class="col-auto d-none d-lg-block">
                 <img
                   alt=" En glad kille"
@@ -292,10 +332,16 @@
             </div>
           </div>
 
+          <!--Andra Review'en som tar upp 50% av bredden i desktop upplösning-->
           <div class="col-md-6">
+
+            <!--En DIV som omsluter innhållet och ger grundegenskaper till designen -->
             <div
               class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative rounded-5 border-color-thin"
             >
+
+
+              <!--DIV som tar hand om text elementen-->
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-success-emphasis"
                   >Review</strong
@@ -303,8 +349,7 @@
                 <h3 class="mb-0">Andreas Berg</h3>
                 <div class="mb-1 text-body-secondary">Nov 11</div>
                 <p class="mb-auto">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content.
+                  Ntegor vulputate tempor libero a faucibus. Sed nec maximus elit, vitae ultrices nulla.
                 </p>
                 <a
                   href="#"
@@ -313,6 +358,8 @@
                   Fortsätt läsa
                 </a>
               </div>
+
+              <!--DIV som innhåller selfie-bilden, som även försvinner när upplösningen lämnar desktop-upplösning-->
               <div class="col-auto d-none d-lg-block">
                 <img
                   alt="En glad kille med keps"
@@ -323,7 +370,10 @@
               </div>
             </div>
           </div>
-          <nav aria-label="Page navigation example">
+
+
+          <!--En navigation som ska ta besökaren till fler "bästsäljare" -->
+          <nav aria-label="Page">
             <ul class="pagination justify-content-center pt-3">
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
@@ -342,12 +392,14 @@
           </nav>
         </div>
 
-        <!--#########################-->
       </main>
 
-      <!--Denna sedan ska jag byta nman på till "ett specifikt sample paket", sedan använda dropgun som mall-->
+      
 
+      <!--Footer med lättläst navigering-->
       <footer class="py-3 mt-5 pt-3">
+
+        <!--Lista som håller alla klickbara känkar-->
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-dark link-primary">Hem</a>
@@ -365,10 +417,13 @@
             <a href="#" class="nav-link px-2 text-dark link-primary">Om Oss</a>
           </li>
         </ul>
+
+        <!--Copyright text-->
         <p class="text-center text-muted">© 2024 HUGO NIIRANEN</p>
       </footer>
     </div>
 
+    <!--Script till bootstrap-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
