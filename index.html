@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<!--Sidan metadata och länkningar-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +14,25 @@
     <link rel="icon" href="images/icon.webp" />
     <title>Examinationsuppgift 3</title>
   </head>
-  <body class="bg-white">
-    <div class="wrapper container p-xs-0 p-md-2 p-xl-4 bg-white">
-      <!--Här är min header där min navigation ligger-->
 
+
+  <!--Innehåller allt synligt på sidan-->
+  <body class="bg-white">
+
+
+    <!--Wrapper som centerar och håller innhållet i en helhetlig responsiv miljö-->
+    <div class="wrapper container p-xs-0 p-md-2 p-xl-4 bg-white">
+      
+
+      <!--Header som innehåller en navigation för att ta sig runt mellan mina sidor-->
       <header>
+
+        <!--Responsiv nav som hamnar i en hamburger meny i mobilt läge-->
         <nav class="navbar navbar-expand-lg bg-white navbar-white pb-3">
           <div class="container">
+
+
+            <!--Klickbar logotop-->
             <a href="index.html"
               ><img
                 src="images/hugologoshop.webp"
@@ -25,6 +40,7 @@
                 height="70"
             /></a>
 
+            <!-- Knapp till hamburger menyn-->
             <button
               class="navbar-toggler"
               type="button"
@@ -37,15 +53,21 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!--Här börjar navbaren-->
             <div
               class="collapse navbar-collapse nav-underline text-end"
               id="navbarNav"
             >
+
+              <!--Lista som håller alla list-items-->
               <ul class="navbar-nav ms-auto">
+
+                <!--List-item med klickbar länk-->
                 <li class="nav-item">
                   <a href="#" class="nav-link text-dark link-primary">OM OSS</a>
                 </li>
 
+                <!--List-item med en dropdown meny-->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle text-dark link-danger"
@@ -68,12 +90,14 @@
                   </ul>
                 </li>
 
+                <!--List-item med klickbar länk-->
                 <li class="nav-item">
                   <a href="pricing.html" class="nav-link text-dark link-success"
                     >PRISER</a
                   >
                 </li>
 
+                <!--List-item med klickbar länk-->
                 <li class="nav-item">
                   <a href="#" class="nav-link text-dark link-warning"
                     >KONTAKT</a
@@ -84,9 +108,12 @@
           </div>
         </nav>
       </header>
-      <!--###############################################################-->
 
+
+      <!--En figure med carousel komponent-->
       <figure>
+
+        <!--Carouselen innehåller 3 bilder och 5 knappar för att navigera den, den har även responsiv text över sig för att förtydliga budskapet -->
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -162,14 +189,24 @@
           </button>
         </div>
       </figure>
-      <!--###############################################################-->
+      
 
+      <!--Här börjar det centrala innhållet på sidan-->
       <main>
+
+
+        <!--Sektion med klasser för en luftigare design-->
         <section class="p-xs-0 p-md-3 p-xl-5 text-dark">
+
+          <!--En cointainer för att använda bootstraps färdiga regler och responsiva delar-->
           <div class="container">
+
+            <!--En DIV som omsluter innehållet och bygger upp en grund-->
             <div
               class="row align-items-center justify-content-between text-center text-lg-start"
             >
+
+              <!--DIV med textinnhåll och knapp-->
               <div class="col-md p-5">
                 <h2>Musikproduktion</h2>
                 <p class="lead">
@@ -184,6 +221,8 @@
                 </p>
                 <a href="#" class="btn btn-dark mt-3"> Läs mer </a>
               </div>
+
+              <!--Andra delen av innhållet som håller en bild-->
               <div class="col-md pb-5">
                 <img
                   src="images/daw_trans.webp"
@@ -196,18 +235,16 @@
           </div>
         </section>
 
-        <!-- Newsletter -->
+
+        <!--En sektion som bygger upp en nyhetsbrev del med en gradient bakgrund-->
         <section
-          class="text-light p-5 mb-5 rad rounded-5"
-          style="
-            background: linear-gradient(
-              to right,
-              rgb(216, 149, 55),
-              rgb(172, 55, 178)
-            );
-          "
+          class="text-light p-5 mb-5 rad rounded-5 bg-org-to-pur"
         >
+
+          <!--Container för responsiva fördelar-->
           <div class="container">
+
+            <!--DIV som innehåller en inputruta, knapp och text-->
             <div class="d-md-flex justify-content-between align-items-center">
               <h3 class="mb-3 mb-md-0">Anmäl dig till vårt nyhetsbrev</h3>
 
@@ -225,14 +262,26 @@
           </div>
         </section>
 
+
+        <!--Sektion med padding för en bättre design-->
         <section class="p-5">
+
+          <!--Container som omsluter alla columner-->
           <div class="container">
+
+            <!--Text del-->
             <h2 class="text-center text-dark">Vårat Team</h2>
             <p class="lead text-center text-dark mb-5">
               Tillsammans har vi över 100+ år av kunskap inom musikvärlden
             </p>
+
+            <!--DIV som lägger innhållet i en rad-->
             <div class="row g-4">
+
+              <!--DIV som ger responsiva delar-->
               <div class="col-md-6 col-lg-3">
+
+                <!--Ett kort med bild och text-->
                 <div class="card border-0">
                   <div class="card-body text-center">
                     <img
@@ -250,7 +299,12 @@
                 </div>
               </div>
 
+
+
+              <!--DIV som ger responsiva delar-->
               <div class="col-md-6 col-lg-3">
+
+                <!--Ett kort med bild och text-->
                 <div class="card border-0">
                   <div class="card-body text-center">
                     <img
@@ -268,7 +322,11 @@
                 </div>
               </div>
 
+
+              <!--DIV som ger responsiva delar-->
               <div class="col-md-6 col-lg-3">
+
+                <!--Ett kort med bild och text-->
                 <div class="card border-0">
                   <div class="card-body text-center">
                     <img
@@ -286,7 +344,11 @@
                 </div>
               </div>
 
+
+              <!--DIV som ger responsiva delar-->
               <div class="col-md-6 col-lg-3">
+
+                <!--Ett kort med bild och text-->
                 <div class="card border-0">
                   <div class="card-body text-center">
                     <img
@@ -307,7 +369,7 @@
           </div>
         </section>
 
-        <!-- Question Accordion -->
+        <!--En sektion med en Accordion komponent -->
         <section
           id="questions"
           class="p-5 mt-5 rounded-5"
@@ -319,10 +381,16 @@
             );
           "
         >
+
+        <!--DIV med text innehåll-->
           <div class="container rounded-3">
             <h2 class="text-center text-white mb-4">Vanliga Frågor</h2>
+
+            <!--Omsluter och är en grund till accordion komponenten-->
             <div class="accordion accordion-flush">
-              <!-- Item 1 -->
+
+
+              <!--Första frågan som är klickbar för att ge ett svar-->
               <div class="accordion-item rounded-top-4">
                 <h2 class="accordion-header">
                   <button
@@ -334,11 +402,15 @@
                     Har skolan en fysisk plats?
                   </button>
                 </h2>
+
+              
                 <div
                   id="question-one"
                   class="accordion-collapse collapse"
                   data-bs-parent="#questions"
                 >
+
+                  <!--Innehållet-->
                   <div class="accordion-body">
                     Donec venenatis vitae leo et luctus. Cras tellus lorem,
                     suscipit sagittis urna id, auctor fermentum quam. Maecenas
@@ -350,7 +422,10 @@
                   </div>
                 </div>
               </div>
-              <!-- Item 2 -->
+
+
+
+              <!--Andra frågan som är klickbar för att ge ett svar-->
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -367,6 +442,8 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#questions"
                 >
+
+                <!--Innehållet-->
                   <div class="accordion-body">
                     Donec venenatis vitae leo et luctus. Cras tellus lorem,
                     suscipit sagittis urna id, auctor fermentum quam. Maecenas
@@ -378,7 +455,9 @@
                   </div>
                 </div>
               </div>
-              <!-- Item 3 -->
+
+
+              <!--Tredje frågan som är klickbar för att ge ett svar-->
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -395,6 +474,9 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#questions"
                 >
+
+
+                  <!--Innehållet-->
                   <div class="accordion-body">
                     Donec venenatis vitae leo et luctus. Cras tellus lorem,
                     suscipit sagittis urna id, auctor fermentum quam. Maecenas
@@ -406,7 +488,9 @@
                   </div>
                 </div>
               </div>
-              <!-- Item 4 -->
+
+
+              <!--Fjärde frågan som är klickbar för att ge ett svar-->
               <div class="accordion-item rounded-bottom-4">
                 <h2 class="accordion-header">
                   <button
@@ -423,6 +507,9 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#questions"
                 >
+
+
+                  <!--Innehållet-->
                   <div class="accordion-body">
                     Donec venenatis vitae leo et luctus. Cras tellus lorem,
                     suscipit sagittis urna id, auctor fermentum quam. Maecenas
@@ -438,9 +525,12 @@
           </div>
         </section>
       </main>
-      <!--###############################################################-->
+      
 
-      <footer class="py-3 mt-5 pt-5">
+      <!--Footer med lättläst navigering-->
+      <footer class="py-3 mt-5 pt-3">
+
+        <!--Lista som håller alla klickbara känkar-->
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-dark link-primary">Hem</a>
@@ -458,11 +548,14 @@
             <a href="#" class="nav-link px-2 text-dark link-primary">Om Oss</a>
           </li>
         </ul>
+
+        <!--Copyright text-->
         <p class="text-center text-muted">© 2024 HUGO NIIRANEN</p>
       </footer>
-      <!--###############################################################-->
     </div>
 
+
+    <!--Script till bootstrap-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

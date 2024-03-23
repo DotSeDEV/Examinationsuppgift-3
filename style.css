@@ -1,16 +1,21 @@
+
+/* Klass för att höja texten vertiklat i carouselen*/
 .carousel-caption {
   top: 34%;
 }
 
+
+/* Klass för att göra texten i carouselen responsiv och gen en lättare bakgrundsfärg*/
 .carousel-caption h1 {
   font-size: max(5vw, 40px);
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.5),
+    rgba(149, 125, 125, 0.5),
     rgba(0, 0, 0, 0.5)
   );
 }
 
+/* Klass för att lätt ge mina element en bakgrundsfärg*/
 .bg-org-to-pur{
   background: linear-gradient(
               to right,
@@ -19,28 +24,35 @@
             );
 }
 
+
+/* Klass för att ge samma bakgrundsfärg, fast i border format*/
 .border-color {
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(to left, rgb(216, 149, 55), rgb(172, 55, 178)) border-box;
+  linear-gradient(to left, rgb(216, 149, 55), rgb(172, 55, 178)) border-box;
   border-radius: 50em;
   border: 14px solid transparent;
 }
 
+/* Klass för en likadan border, fast tunnare*/
 .border-color-thin {
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(to left, rgb(216, 149, 55), rgb(172, 55, 178)) border-box;
+  linear-gradient(to left, rgb(216, 149, 55), rgb(172, 55, 178)) border-box;
   border-radius: 50em;
   border: 5px solid transparent;
 }
 
+
+/* Klass för att ge korten en egen animation när musen är över*/
 .card {
   transition: all 0.5s;
 }
 
+/* Hover effekten som ökar kortet storlek med 10% */
 .card:hover {
   transform: scale(1.1);
 }
 
+/* EN egen brytpunkt för att ge en statisk storlek en responsiv förmåga i midre upplösning */
 @media (max-width: 765px) {
   .egen-bredd {
     width: 100%;
